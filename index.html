@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medora Hospital | Patient Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hospital.css">
+</head>
+<body id="top">
+  <header class="topbar">
+    <div class="container topbar-inner"><span>Emergency: <b>+91 98765 43210</b></span><span>Open 24 hours, 7 days a week</span></div>
+  </header>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span class="brand-icon">✚</span><span><strong>MEDORA</strong><small>Hospital &amp; Research Centre</small></span></a>
+      <button class="menu-button" aria-label="Open menu">☰</button>
+      <div class="nav-links"><a class="active" href="#top">Home</a><a href="#about">About us</a><a href="#services">Services</a><a href="#doctors">Doctors</a><a href="#contact">Contact</a></div>
+      <a class="appointment-btn" href="#appointment">Book appointment</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shape"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Trusted healthcare partner</div>
+          <h1>Compassionate care.<br><em>Advanced medicine.</em></h1>
+          <p>Expert doctors, modern facilities, and personalized treatment for every stage of your health journey.</p>
+          <div class="hero-actions"><a class="button primary" href="#appointment">Book an appointment <span>→</span></a><a class="button text-button" href="#services">Explore services <span>↗</span></a></div>
+          <div class="hero-trust"><div class="avatars"><i>A</i><i>M</i><i>S</i></div><p><strong>4.9/5 patient rating</strong><br>Trusted by 12,000+ families</p></div>
+        </div>
+        <div class="hero-visual" aria-label="Doctor illustration">
+          <div class="pulse-ring ring-one"></div><div class="pulse-ring ring-two"></div>
+          <div class="doctor-portrait"><div class="doctor-head"></div><div class="doctor-hair"></div><div class="doctor-body"></div><div class="stethoscope"></div></div>
+          <div class="doctor-card"><span class="live-dot"></span><p><small>Doctor available now</small><strong>Dr. Ananya Mehta</strong><em>Chief Consultant</em></p></div>
+          <div class="rating-card"><strong>25+</strong><span>Years of medical<br>excellence</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-services" id="services">
+      <div class="container quick-grid">
+        <article><div class="service-icon">♟</div><div><h3>Find a doctor</h3><p>Search specialists</p></div><a href="#doctors">→</a></article>
+        <article><div class="service-icon">▣</div><div><h3>Book appointment</h3><p>Choose your time</p></div><a href="#appointment">→</a></article>
+        <article><div class="service-icon">⌁</div><div><h3>Emergency care</h3><p>Available 24/7</p></div><a href="#contact">→</a></article>
+        <article><div class="service-icon">♡</div><div><h3>Health checkups</h3><p>Preventive packages</p></div><a href="#appointment">→</a></article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo"><div class="medical-cross">✚</div><div class="experience-badge"><strong>25</strong><span>Years of<br>excellence</span></div></div>
+        <div class="about-copy"><span class="section-label">About Medora</span><h2>We care for the person,<br><em>not just the illness.</em></h2><p>At Medora, clinical excellence meets human kindness. Our multidisciplinary teams deliver evidence-based care with warmth, clarity, and respect.</p><div class="feature-list"><div><b>✓</b><span><strong>Expert specialists</strong><small>Experienced doctors across disciplines</small></span></div><div><b>✓</b><span><strong>Modern technology</strong><small>Advanced diagnostics and treatment</small></span></div></div><a class="link-arrow" href="#about">Discover our story →</a></div>
+      </div>
+    </section>
+
+    <section class="specialties section" id="doctors">
+      <div class="container">
+        <div class="heading-row"><div><span class="section-label">Centers of excellence</span><h2>Specialist care for<br><em>every need.</em></h2></div><a class="outline-button" href="#appointment">Request specialist care →</a></div>
+        <div class="specialty-grid">
+          <article><span class="dept-icon">♡</span><h3>Cardiology</h3><p>Advanced heart diagnosis, treatment, and rehabilitation.</p><a href="#appointment">Learn more →</a></article>
+          <article><span class="dept-icon">♘</span><h3>Neurology</h3><p>Comprehensive care for brain and nervous system conditions.</p><a href="#appointment">Learn more →</a></article>
+          <article><span class="dept-icon">✚</span><h3>Orthopedics</h3><p>Complete bone, joint, and sports injury treatment.</p><a href="#appointment">Learn more →</a></article>
+          <article><span class="dept-icon">◉</span><h3>Pediatrics</h3><p>Gentle, specialized healthcare for infants and children.</p><a href="#appointment">Learn more →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment section" id="appointment">
+      <div class="container appointment-card">
+        <div><span class="section-label light">Request a visit</span><h2>Ready to take the<br><em>next step?</em></h2><p>Tell us what you need and our care team will call you to arrange your visit.</p></div>
+        <form id="appointment-form">
+          <label><span>Full name</span><input name="name" required placeholder="Your name"></label>
+          <label><span>Phone number</span><input name="phone" required placeholder="+91 00000 00000"></label>
+          <label><span>Department</span><select name="department"><option>General Medicine</option><option>Cardiology</option><option>Neurology</option><option>Orthopedics</option><option>Pediatrics</option></select></label>
+          <button class="button primary" type="submit">Request appointment →</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-icon">✚</span><span><strong>MEDORA</strong><small>Hospital &amp; Research Centre</small></span></a><p>Compassionate care and trusted expertise for healthier communities.</p></div><div><h4>Quick links</h4><a href="#about">About us</a><a href="#services">Our services</a><a href="#doctors">Doctors</a></div><div><h4>Patient care</h4><a href="#appointment">Appointments</a><a href="#services">Health services</a><a href="#contact">Hospital contact</a></div><div><h4>Contact</h4><p>42 Wellness Avenue<br>Bengaluru, Karnataka<br>+91 98765 43210</p></div></div>
+    <div class="container footer-bottom"><span>© 2026 Medora Hospital. Concept website.</span><span>Privacy policy &nbsp;&nbsp; Terms of use</span></div>
+  </footer>
+  <script src="hospital.js"></script>
+</body>
+</html>
